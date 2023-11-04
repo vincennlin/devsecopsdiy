@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 public class DemoApplication {
 
-	@GetMapping("/") public String hello() {
+	@GetMapping("/")
+	public String hello() {
 	return "<html><body><h1>Hello DevSecOps</body></h1></html>";
 	}
 

@@ -32,36 +32,35 @@ jobs:
            name: Depcheck report
            path: ${{github.workspace}}/reports
 
-  # sast:
-  #   runs-on: ubuntu-latest
-  #   name: Run unit tests and SAST scan on the source code
-  #   steps:
-  #   - uses: actions/checkout@v4
-  #   - uses: actions/setup-java@v3
-  #     with:
-  #       distribution: 'temurin'
-  #       java-version: '17'
-  #       cache: 'maven'
-  #   - name: Build with Maven cloud
-  #     run: mvn -B verify sonar:sonar -Dsonar.projectKey=vincennlin_devsecopsdiy -Dsonar.organization=vincennlin
-  #       -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
-  #   env:
-  #     SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+  sast:
+    runs-on: ubuntu-latest
+    name: Run unit tests and SAST scan on the source code
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-java@v3
+      with:
+        distribution: 'temurin'
+        java-version: '17'
+        cache: 'maven'
+    - name: Build with Maven cloud
+      run: mvn -B verify sonar:sonar -Dsonar.projectKey=vincennlin_devsecopsdiy -Dsonar.organization=vincennlin
+        -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
+    env:
+      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
-  # sbom:
-  #   runs-on: ubuntu-latest
-  #   name: Generate SBOM
-  #   # needs: [sast] 
-  #   needs: [depchecktest]
-  #   steps:
-  #     - uses: actions/checkout@v4
-  #     - uses: actions/setup-java@v3
-  #       with:
-  #         distribution: 'temurin'
-  #         java-version: '17'
-  #         cache: 'maven'
-  #     - name: Generate SBOM
-  #       run: mvn cyclonedx:makeAggregateBom
+  sbom:
+    runs-on: ubuntu-latest
+    name: Generate SBOM
+    needs: [sast]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          cache: 'maven'
+      - name: Generate SBOM
+        run: mvn cyclonedx:makeAggregateBom
 
   slscan:
     runs-on: ubuntu-latest

@@ -51,7 +51,8 @@ jobs:
   sbom:
     runs-on: ubuntu-latest
     name: Generate SBOM
-    needs: [sast]
+    # needs: [sast]
+    needs: depchecktest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v3

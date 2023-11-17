@@ -1,4 +1,3 @@
-
 on: [push]
 
 jobs:
@@ -51,7 +50,6 @@ jobs:
   sbom:
     runs-on: ubuntu-latest
     name: Generate SBOM
-    # needs: [sast]
     needs: depchecktest
     steps:
       - uses: actions/checkout@v4
@@ -62,6 +60,13 @@ jobs:
           cache: 'maven'
       - name: Generate SBOM
         run: mvn cyclonedx:makeAggregateBom
+      - name: Copy SBOM to desired location
+        run: cp target/bom.xml ${{github.workspace}}/bom.xml
+      - name: Upload SBOM
+        uses: actions/upload-artifact@v2
+        with:
+          name: sbom
+          path: ${{github.workspace}}/bom.xml
 
   slscan:
     runs-on: ubuntu-latest
@@ -93,17 +98,14 @@ jobs:
           distribution: 'temurin' 
           java-version: '17' 
           cache: 'maven'
+      - name: Copy SBOM to Docker context
+        run: cp ${{github.workspace}}/bom.xml .
       - name: Login to DockerHub
         uses: docker/login-action@v2
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
-      - name: Build with Maven
-        run: mvn clean install
-      - name: Docker Build and Push to DockerHub
-        uses: docker/build-push-action@v5
-        with:
-          context: . 
-          push: true 
-          tags: vincennlin/devsecopsdiy:1.0
-            
+      - name: Build Docker image with Maven
+        run: docker build -t vincennlin/devsecopsdiy:1.0 .
+      - name: Docker Push to DockerHub
+        run: docker push vincennlin/devsecopsdiy:1.0

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bom xmlns="http://cyclonedx.org/schema/bom/1.2" serialNumber="urn:uuid:46b2668c-4d9f-480b-8f60-05a4ac17b838" version="1">
+<bom xmlns="http://cyclonedx.org/schema/bom/1.2" serialNumber="urn:uuid:2e3abb2c-f063-41c5-97ce-050e2de3c298" version="1">
     <metadata>
-        <timestamp>2023-11-17T15:49:00Z</timestamp>
+        <timestamp>2023-11-17T22:06:02Z</timestamp>
         <tools>
             <tool>
                 <vendor>CycloneDX</vendor>
@@ -100,146 +100,6 @@
                 </reference>
                 <reference type="vcs">
                     <url>https://github.com/spring-projects/spring-boot</url>
-                </reference>
-            </externalReferences>
-        </component>
-        <component bom-ref="pkg:maven/org.springframework/spring-context@6.0.12?type=jar" type="library">
-            <publisher>Spring IO</publisher>
-            <group>org.springframework</group>
-            <name>spring-context</name>
-            <version>6.0.12</version>
-            <description><![CDATA[Spring Context]]></description>
-            <scope>required</scope>
-            <hashes>
-                <hash alg="MD5">fc55461af3ae9cf2e62c1f4834213b30</hash>
-                <hash alg="SHA-1">f1964518e07796b2fdc1b9be2108485ffe1b4566</hash>
-                <hash alg="SHA-256">9f19eec7b8f943eba0c0a39a01549a28854f667820935bc9d120a9d53ffb8efc</hash>
-                <hash alg="SHA-384">79432d6fd7be0faa6d384c967c8c5c60b7b3fdf3435faf9ba6153177781fe76e5fb5660afbc8fb12db4d0c558bdd7c28</hash>
-                <hash alg="SHA-512">4717bd8436ba726db955911a9f5f028595f6990442c9608032550d56b986556dee3cac7d7a619a06dafabb1684efe246762d99e9cf5fdabdea52c0dac2e829cd</hash>
-                <hash alg="SHA3-256">0e309c88099fea4e68c7cdb909c7692077ebf774707946784900a132b646e1d3</hash>
-                <hash alg="SHA3-384">827117e7d8c655851af383f0f090fa4e4c73d707d70924fed9bac01bdfcfcba59cdd448449c446bf311fe87df00c699b</hash>
-                <hash alg="SHA3-512">ef09c5862e4208926eff603f9f2965490d29240f3eac569f1a55bc78eda71b5c64325908828a5468d179f250e1987c7329df76bba0fda1739abc62b7b8934f4a</hash>
-            </hashes>
-            <licenses>
-                <license>
-                    <id>Apache-2.0</id>
-                </license>
-            </licenses>
-            <purl>pkg:maven/org.springframework/spring-context@6.0.12?type=jar</purl>
-            <externalReferences>
-                <reference type="website">
-                    <url>https://spring.io/projects/spring-framework</url>
-                </reference>
-                <reference type="issue-tracker">
-                    <url>https://github.com/spring-projects/spring-framework/issues</url>
-                </reference>
-                <reference type="vcs">
-                    <url>https://github.com/spring-projects/spring-framework</url>
-                </reference>
-            </externalReferences>
-        </component>
-        <component bom-ref="pkg:maven/org.springframework/spring-aop@6.0.12?type=jar" type="library">
-            <publisher>Spring IO</publisher>
-            <group>org.springframework</group>
-            <name>spring-aop</name>
-            <version>6.0.12</version>
-            <description><![CDATA[Spring AOP]]></description>
-            <scope>required</scope>
-            <hashes>
-                <hash alg="MD5">8627688dd9370927ba35daf78a56c387</hash>
-                <hash alg="SHA-1">ba7ecdbdc2abaf172d49692b8110f65ecd2d250c</hash>
-                <hash alg="SHA-256">f8c735ac2c6d3fe7759ef05b0088115b01f4c43b1076de8070612f0b7dd6f5e4</hash>
-                <hash alg="SHA-384">2b26956457bfd023231014a7fe49c29f74a194e5efc782ed6b3e27dbd54b08579149b6b19928be8584776703c8570db0</hash>
-                <hash alg="SHA-512">1f173432345c43b4e99a018206a3f3d4eb9e851d2fbcd7e660cabb919b5f0f929ab8cf84965ccbb8ed8e1e691274523366e82f61c670de95ad3f8fb02540f92a</hash>
-                <hash alg="SHA3-256">7e82411dd95da21186508447cf9e6104529ac49113285900f7baf81afa2c5025</hash>
-                <hash alg="SHA3-384">9a3cf78302ad34fcbf65f9df794a7b6b9f475faa25202f57da35ae06ffd1d4c68940a109277f32fa8c6ce16687967b6d</hash>
-                <hash alg="SHA3-512">4c1e3199320838dcd168179fa98c89dc3712303a67e75e0662c4f3b7b58b54177ce9f0e3e0a1b9cdef1f83940f5c095a6585784ed0fa1ab6952c952cb70305cd</hash>
-            </hashes>
-            <licenses>
-                <license>
-                    <id>Apache-2.0</id>
-                </license>
-            </licenses>
-            <purl>pkg:maven/org.springframework/spring-aop@6.0.12?type=jar</purl>
-            <externalReferences>
-                <reference type="website">
-                    <url>https://spring.io/projects/spring-framework</url>
-                </reference>
-                <reference type="issue-tracker">
-                    <url>https://github.com/spring-projects/spring-framework/issues</url>
-                </reference>
-                <reference type="vcs">
-                    <url>https://github.com/spring-projects/spring-framework</url>
-                </reference>
-            </externalReferences>
-        </component>
-        <component bom-ref="pkg:maven/org.springframework/spring-beans@6.0.12?type=jar" type="library">
-            <publisher>Spring IO</publisher>
-            <group>org.springframework</group>
-            <name>spring-beans</name>
-            <version>6.0.12</version>
-            <description><![CDATA[Spring Beans]]></description>
-            <scope>required</scope>
-            <hashes>
-                <hash alg="MD5">68e2ce18001437a73142f93cec32f9dd</hash>
-                <hash alg="SHA-1">dfa53afbf1ab65f36c60333443ed1109ed331504</hash>
-                <hash alg="SHA-256">75b5dfed8723703797e6e835154aca6e771b683da0307898ab9816037e936138</hash>
-                <hash alg="SHA-384">5f27b0b2214e72dee6d9fcaa1d3c6ba380fa7273f12b4221dd91c656c55ec89f5d8da18233263d95f7ff67f3061308c5</hash>
-                <hash alg="SHA-512">395e3c23bb14348afae3597b951a6349dc420e2f28b5c71f02bbd930cb77e008bf42e65a1d84622db8bd3d7c08fd4160e78d10b4e733b2dd2e8268945554e46b</hash>
-                <hash alg="SHA3-256">b1de1a558ca245a34bfaa07ebe57b708ec078c7ae9c29738ac30d24b7dc0d141</hash>
-                <hash alg="SHA3-384">b905dd1a3e2bb8a9a3b9e0d8518444cd9fe79cd0dda1fa70f19930c02aafff534a347a47eb1ad395d4f3ce2dda83c15a</hash>
-                <hash alg="SHA3-512">a511571a3b8aebdc3a79b7d52488c66cf550d20dacbc06ad2db509b54781cd1d50df5edd4f9ca3568e93cca49ff26da5600b91a65d64f7e8b741cd378250dce1</hash>
-            </hashes>
-            <licenses>
-                <license>
-                    <id>Apache-2.0</id>
-                </license>
-            </licenses>
-            <purl>pkg:maven/org.springframework/spring-beans@6.0.12?type=jar</purl>
-            <externalReferences>
-                <reference type="website">
-                    <url>https://spring.io/projects/spring-framework</url>
-                </reference>
-                <reference type="issue-tracker">
-                    <url>https://github.com/spring-projects/spring-framework/issues</url>
-                </reference>
-                <reference type="vcs">
-                    <url>https://github.com/spring-projects/spring-framework</url>
-                </reference>
-            </externalReferences>
-        </component>
-        <component bom-ref="pkg:maven/org.springframework/spring-expression@6.0.12?type=jar" type="library">
-            <publisher>Spring IO</publisher>
-            <group>org.springframework</group>
-            <name>spring-expression</name>
-            <version>6.0.12</version>
-            <description><![CDATA[Spring Expression Language (SpEL)]]></description>
-            <scope>required</scope>
-            <hashes>
-                <hash alg="MD5">0f061cf4b135e91316ca206e43504f80</hash>
-                <hash alg="SHA-1">9283ad418f06f918e834b1981998a5f62a05b355</hash>
-                <hash alg="SHA-256">baeb22c3b4f4917d33471994b8f81a5333b41f736f07cec83df73e59fc57a3b1</hash>
-                <hash alg="SHA-384">47eb7b66d05a2c6ae41409cc7fdcd715a0433c484a5a8aa032eeeb1245ed5bdcffc62cbabc76b08df751b93da94419a7</hash>
-                <hash alg="SHA-512">a45e51beb181599b005af53839d6350c56f9e5f4c99e2a66ea5b9df523723e4ebcc8f07176039451079e24e2703fc45e8ce78462a29a4c65de8bee0bdb382797</hash>
-                <hash alg="SHA3-256">18a77a3476167ebb332524dd3e5be371dc5cc16b2a371014568dcb17301425e9</hash>
-                <hash alg="SHA3-384">c3aa202483150db97da613720a0458146049461b9112a43b381831d5b4ab06ea29ebc8d9aac11f555e00a40649f6941c</hash>
-                <hash alg="SHA3-512">1399f656c7cc1fd9235383b9d5d4563823a9aebc21abdd742db70cf9ab6fe9acd1cb865988183aa2914e7f84a0af79cdec0dd44ecdcbe81282242f8968b623fb</hash>
-            </hashes>
-            <licenses>
-                <license>
-                    <id>Apache-2.0</id>
-                </license>
-            </licenses>
-            <purl>pkg:maven/org.springframework/spring-expression@6.0.12?type=jar</purl>
-            <externalReferences>
-                <reference type="website">
-                    <url>https://spring.io/projects/spring-framework</url>
-                </reference>
-                <reference type="issue-tracker">
-                    <url>https://github.com/spring-projects/spring-framework/issues</url>
-                </reference>
-                <reference type="vcs">
-                    <url>https://github.com/spring-projects/spring-framework</url>
                 </reference>
             </externalReferences>
         </component>
@@ -626,37 +486,6 @@
                 </reference>
             </externalReferences>
         </component>
-        <component bom-ref="pkg:maven/org.yaml/snakeyaml@1.33?type=jar" type="library">
-            <group>org.yaml</group>
-            <name>snakeyaml</name>
-            <version>1.33</version>
-            <description><![CDATA[YAML 1.1 parser and emitter for Java]]></description>
-            <scope>required</scope>
-            <hashes>
-                <hash alg="MD5">e0164a637c691c8cf01d29f90a709c02</hash>
-                <hash alg="SHA-1">2cd0a87ff7df953f810c344bdf2fe3340b954c69</hash>
-                <hash alg="SHA-256">11ff459788f0a2d781f56a4a86d7e69202cebacd0273d5269c4ae9f02f3fd8f0</hash>
-                <hash alg="SHA-384">9f0a0a35df2b339830b9e78294634ea894e7096e01709c82d965e24a9fa9ac6ee15edbbbf23368dcd57741de5bf23086</hash>
-                <hash alg="SHA-512">787b72aebb685689ab379ed8f238fc2f4175bb82d285909e39e7ff1ee1b9e64ad8878f4685dadde274f950b0dc77dca3082a52921c11094aa2a535672ae4f33c</hash>
-                <hash alg="SHA3-256">7dcf0429ecb923a66e00ec633bafeb297e3b90e1cc2be0f85443fd61367f355a</hash>
-                <hash alg="SHA3-384">91d8fd581d60be4090d3b522d8c119c12449cff2ce6c436d0e53977e1c9fea8686b2b360fb15f4c3507e4f243d7d6170</hash>
-                <hash alg="SHA3-512">59b32910dddf63475893f7c830d58ca320cd6183704d80b8111cee7bb1674f97f5699c8ac52f905a5b9a20128b9e2b6a26a07490f217033c858d9c358bedcafc</hash>
-            </hashes>
-            <licenses>
-                <license>
-                    <id>Apache-2.0</id>
-                </license>
-            </licenses>
-            <purl>pkg:maven/org.yaml/snakeyaml@1.33?type=jar</purl>
-            <externalReferences>
-                <reference type="issue-tracker">
-                    <url>https://bitbucket.org/snakeyaml/snakeyaml/issues</url>
-                </reference>
-                <reference type="vcs">
-                    <url>https://bitbucket.org/snakeyaml/snakeyaml/src</url>
-                </reference>
-            </externalReferences>
-        </component>
         <component bom-ref="pkg:maven/org.slf4j/slf4j-api@2.0.9?type=jar" type="library">
             <publisher>QOS.ch</publisher>
             <group>org.slf4j</group>
@@ -719,6 +548,293 @@
             <externalReferences>
                 <reference type="vcs">
                     <url>https://github.com/hamcrest/JavaHamcrest</url>
+                </reference>
+            </externalReferences>
+        </component>
+        <component bom-ref="pkg:maven/org.springframework/spring-webmvc@5.2.20.RELEASE?type=jar" type="library">
+            <publisher>Spring IO</publisher>
+            <group>org.springframework</group>
+            <name>spring-webmvc</name>
+            <version>5.2.20.RELEASE</version>
+            <description><![CDATA[Spring Web MVC]]></description>
+            <scope>required</scope>
+            <hashes>
+                <hash alg="MD5">2d7db828033e2a0c4917f3c0a40c8eaa</hash>
+                <hash alg="SHA-1">38a406a75244d23174c2e8307b5a61348c94bd05</hash>
+                <hash alg="SHA-256">5f16874164213fbf8be17df015eaa0c67f0014c2ea4e5a5ef70cb034ce8e8ce6</hash>
+                <hash alg="SHA-384">c1b5b2d6e45414fb808bc0f702c099c2f2fd857c6e9f49f04394f42232208496b03cd5dea08f1b9aba89e94fe4a38cd1</hash>
+                <hash alg="SHA-512">b797b4b763f16876cbf4e89dcc45bf59417433c9085176c9e81607404769528e41ac79bb83885d6f6c0fda70dd511f8e4a97f3d5e6ee557c0dd69cd6e7034f2e</hash>
+                <hash alg="SHA3-256">737c0a81c926eba48b8487425dec22c785356f6392ab24cd579bd80994513007</hash>
+                <hash alg="SHA3-384">d53b99ca38a6f007ae900423b5e52bb226a5b16e73e1bb6305dbb0e3bc527015361e7628cda5ad352219ac92919afeb0</hash>
+                <hash alg="SHA3-512">d267c0f287f7222464ed3165e363550592e7582bf266b20727a181c2362f351cb496afa7c9dc7685330fcf00cc93d68378e174044844b885a8a96bbe1e1c846a</hash>
+            </hashes>
+            <licenses>
+                <license>
+                    <id>Apache-2.0</id>
+                </license>
+            </licenses>
+            <purl>pkg:maven/org.springframework/spring-webmvc@5.2.20.RELEASE?type=jar</purl>
+            <externalReferences>
+                <reference type="website">
+                    <url>https://spring.io/projects/spring-framework</url>
+                </reference>
+                <reference type="issue-tracker">
+                    <url>https://github.com/spring-projects/spring-framework/issues</url>
+                </reference>
+                <reference type="vcs">
+                    <url>https://github.com/spring-projects/spring-framework</url>
+                </reference>
+            </externalReferences>
+        </component>
+        <component bom-ref="pkg:maven/org.springframework/spring-aop@6.0.12?type=jar" type="library">
+            <publisher>Spring IO</publisher>
+            <group>org.springframework</group>
+            <name>spring-aop</name>
+            <version>6.0.12</version>
+            <description><![CDATA[Spring AOP]]></description>
+            <scope>required</scope>
+            <hashes>
+                <hash alg="MD5">8627688dd9370927ba35daf78a56c387</hash>
+                <hash alg="SHA-1">ba7ecdbdc2abaf172d49692b8110f65ecd2d250c</hash>
+                <hash alg="SHA-256">f8c735ac2c6d3fe7759ef05b0088115b01f4c43b1076de8070612f0b7dd6f5e4</hash>
+                <hash alg="SHA-384">2b26956457bfd023231014a7fe49c29f74a194e5efc782ed6b3e27dbd54b08579149b6b19928be8584776703c8570db0</hash>
+                <hash alg="SHA-512">1f173432345c43b4e99a018206a3f3d4eb9e851d2fbcd7e660cabb919b5f0f929ab8cf84965ccbb8ed8e1e691274523366e82f61c670de95ad3f8fb02540f92a</hash>
+                <hash alg="SHA3-256">7e82411dd95da21186508447cf9e6104529ac49113285900f7baf81afa2c5025</hash>
+                <hash alg="SHA3-384">9a3cf78302ad34fcbf65f9df794a7b6b9f475faa25202f57da35ae06ffd1d4c68940a109277f32fa8c6ce16687967b6d</hash>
+                <hash alg="SHA3-512">4c1e3199320838dcd168179fa98c89dc3712303a67e75e0662c4f3b7b58b54177ce9f0e3e0a1b9cdef1f83940f5c095a6585784ed0fa1ab6952c952cb70305cd</hash>
+            </hashes>
+            <licenses>
+                <license>
+                    <id>Apache-2.0</id>
+                </license>
+            </licenses>
+            <purl>pkg:maven/org.springframework/spring-aop@6.0.12?type=jar</purl>
+            <externalReferences>
+                <reference type="website">
+                    <url>https://spring.io/projects/spring-framework</url>
+                </reference>
+                <reference type="issue-tracker">
+                    <url>https://github.com/spring-projects/spring-framework/issues</url>
+                </reference>
+                <reference type="vcs">
+                    <url>https://github.com/spring-projects/spring-framework</url>
+                </reference>
+            </externalReferences>
+        </component>
+        <component bom-ref="pkg:maven/org.springframework/spring-beans@6.0.12?type=jar" type="library">
+            <publisher>Spring IO</publisher>
+            <group>org.springframework</group>
+            <name>spring-beans</name>
+            <version>6.0.12</version>
+            <description><![CDATA[Spring Beans]]></description>
+            <scope>required</scope>
+            <hashes>
+                <hash alg="MD5">68e2ce18001437a73142f93cec32f9dd</hash>
+                <hash alg="SHA-1">dfa53afbf1ab65f36c60333443ed1109ed331504</hash>
+                <hash alg="SHA-256">75b5dfed8723703797e6e835154aca6e771b683da0307898ab9816037e936138</hash>
+                <hash alg="SHA-384">5f27b0b2214e72dee6d9fcaa1d3c6ba380fa7273f12b4221dd91c656c55ec89f5d8da18233263d95f7ff67f3061308c5</hash>
+                <hash alg="SHA-512">395e3c23bb14348afae3597b951a6349dc420e2f28b5c71f02bbd930cb77e008bf42e65a1d84622db8bd3d7c08fd4160e78d10b4e733b2dd2e8268945554e46b</hash>
+                <hash alg="SHA3-256">b1de1a558ca245a34bfaa07ebe57b708ec078c7ae9c29738ac30d24b7dc0d141</hash>
+                <hash alg="SHA3-384">b905dd1a3e2bb8a9a3b9e0d8518444cd9fe79cd0dda1fa70f19930c02aafff534a347a47eb1ad395d4f3ce2dda83c15a</hash>
+                <hash alg="SHA3-512">a511571a3b8aebdc3a79b7d52488c66cf550d20dacbc06ad2db509b54781cd1d50df5edd4f9ca3568e93cca49ff26da5600b91a65d64f7e8b741cd378250dce1</hash>
+            </hashes>
+            <licenses>
+                <license>
+                    <id>Apache-2.0</id>
+                </license>
+            </licenses>
+            <purl>pkg:maven/org.springframework/spring-beans@6.0.12?type=jar</purl>
+            <externalReferences>
+                <reference type="website">
+                    <url>https://spring.io/projects/spring-framework</url>
+                </reference>
+                <reference type="issue-tracker">
+                    <url>https://github.com/spring-projects/spring-framework/issues</url>
+                </reference>
+                <reference type="vcs">
+                    <url>https://github.com/spring-projects/spring-framework</url>
+                </reference>
+            </externalReferences>
+        </component>
+        <component bom-ref="pkg:maven/org.springframework/spring-context@6.0.12?type=jar" type="library">
+            <publisher>Spring IO</publisher>
+            <group>org.springframework</group>
+            <name>spring-context</name>
+            <version>6.0.12</version>
+            <description><![CDATA[Spring Context]]></description>
+            <scope>required</scope>
+            <hashes>
+                <hash alg="MD5">fc55461af3ae9cf2e62c1f4834213b30</hash>
+                <hash alg="SHA-1">f1964518e07796b2fdc1b9be2108485ffe1b4566</hash>
+                <hash alg="SHA-256">9f19eec7b8f943eba0c0a39a01549a28854f667820935bc9d120a9d53ffb8efc</hash>
+                <hash alg="SHA-384">79432d6fd7be0faa6d384c967c8c5c60b7b3fdf3435faf9ba6153177781fe76e5fb5660afbc8fb12db4d0c558bdd7c28</hash>
+                <hash alg="SHA-512">4717bd8436ba726db955911a9f5f028595f6990442c9608032550d56b986556dee3cac7d7a619a06dafabb1684efe246762d99e9cf5fdabdea52c0dac2e829cd</hash>
+                <hash alg="SHA3-256">0e309c88099fea4e68c7cdb909c7692077ebf774707946784900a132b646e1d3</hash>
+                <hash alg="SHA3-384">827117e7d8c655851af383f0f090fa4e4c73d707d70924fed9bac01bdfcfcba59cdd448449c446bf311fe87df00c699b</hash>
+                <hash alg="SHA3-512">ef09c5862e4208926eff603f9f2965490d29240f3eac569f1a55bc78eda71b5c64325908828a5468d179f250e1987c7329df76bba0fda1739abc62b7b8934f4a</hash>
+            </hashes>
+            <licenses>
+                <license>
+                    <id>Apache-2.0</id>
+                </license>
+            </licenses>
+            <purl>pkg:maven/org.springframework/spring-context@6.0.12?type=jar</purl>
+            <externalReferences>
+                <reference type="website">
+                    <url>https://spring.io/projects/spring-framework</url>
+                </reference>
+                <reference type="issue-tracker">
+                    <url>https://github.com/spring-projects/spring-framework/issues</url>
+                </reference>
+                <reference type="vcs">
+                    <url>https://github.com/spring-projects/spring-framework</url>
+                </reference>
+            </externalReferences>
+        </component>
+        <component bom-ref="pkg:maven/org.springframework/spring-expression@6.0.12?type=jar" type="library">
+            <publisher>Spring IO</publisher>
+            <group>org.springframework</group>
+            <name>spring-expression</name>
+            <version>6.0.12</version>
+            <description><![CDATA[Spring Expression Language (SpEL)]]></description>
+            <scope>required</scope>
+            <hashes>
+                <hash alg="MD5">0f061cf4b135e91316ca206e43504f80</hash>
+                <hash alg="SHA-1">9283ad418f06f918e834b1981998a5f62a05b355</hash>
+                <hash alg="SHA-256">baeb22c3b4f4917d33471994b8f81a5333b41f736f07cec83df73e59fc57a3b1</hash>
+                <hash alg="SHA-384">47eb7b66d05a2c6ae41409cc7fdcd715a0433c484a5a8aa032eeeb1245ed5bdcffc62cbabc76b08df751b93da94419a7</hash>
+                <hash alg="SHA-512">a45e51beb181599b005af53839d6350c56f9e5f4c99e2a66ea5b9df523723e4ebcc8f07176039451079e24e2703fc45e8ce78462a29a4c65de8bee0bdb382797</hash>
+                <hash alg="SHA3-256">18a77a3476167ebb332524dd3e5be371dc5cc16b2a371014568dcb17301425e9</hash>
+                <hash alg="SHA3-384">c3aa202483150db97da613720a0458146049461b9112a43b381831d5b4ab06ea29ebc8d9aac11f555e00a40649f6941c</hash>
+                <hash alg="SHA3-512">1399f656c7cc1fd9235383b9d5d4563823a9aebc21abdd742db70cf9ab6fe9acd1cb865988183aa2914e7f84a0af79cdec0dd44ecdcbe81282242f8968b623fb</hash>
+            </hashes>
+            <licenses>
+                <license>
+                    <id>Apache-2.0</id>
+                </license>
+            </licenses>
+            <purl>pkg:maven/org.springframework/spring-expression@6.0.12?type=jar</purl>
+            <externalReferences>
+                <reference type="website">
+                    <url>https://spring.io/projects/spring-framework</url>
+                </reference>
+                <reference type="issue-tracker">
+                    <url>https://github.com/spring-projects/spring-framework/issues</url>
+                </reference>
+                <reference type="vcs">
+                    <url>https://github.com/spring-projects/spring-framework</url>
+                </reference>
+            </externalReferences>
+        </component>
+        <component bom-ref="pkg:maven/org.springframework/spring-web@6.0.12?type=jar" type="library">
+            <publisher>Spring IO</publisher>
+            <group>org.springframework</group>
+            <name>spring-web</name>
+            <version>6.0.12</version>
+            <description><![CDATA[Spring Web]]></description>
+            <scope>required</scope>
+            <hashes>
+                <hash alg="MD5">7c575ec671f7673344802ef903fdac5a</hash>
+                <hash alg="SHA-1">89a20bbd7c1f973dc246b1d790b34e0b3e28e74d</hash>
+                <hash alg="SHA-256">564b974e54f48fa5f7a721f364d980200bff05213199f8e154b3f4b89a674057</hash>
+                <hash alg="SHA-384">242f1e30c23843181572b9296b587eb8cce0c54a6e44a32a9656fd09e14522d7a49c340e70eae486ae466079ba651fc5</hash>
+                <hash alg="SHA-512">93f0a004420df3a8c7db32a096435680da2649b17e633c82d99e244709b511b0725d71c20bdc2d79483c27297d968898d9951e92093798888bebef0c2445860a</hash>
+                <hash alg="SHA3-256">b1a81ea79855f9527031880dbec30a5326dc7f23012a21b35845091d66822af2</hash>
+                <hash alg="SHA3-384">bc37ed5e55447e55db3acffaa99523b21583235763d5a2911e8eb20b08723117eaea5592d79735eedf0f9828951a2da9</hash>
+                <hash alg="SHA3-512">e03d915a3f8315e3b326b6bbd382c514eeecaea5906e84f320c01e95eebde4d2b9430f5728519e1c378dc598112662008da00b8e9ed4e3668ce9a57ca2998230</hash>
+            </hashes>
+            <licenses>
+                <license>
+                    <id>Apache-2.0</id>
+                </license>
+            </licenses>
+            <purl>pkg:maven/org.springframework/spring-web@6.0.12?type=jar</purl>
+            <externalReferences>
+                <reference type="website">
+                    <url>https://spring.io/projects/spring-framework</url>
+                </reference>
+                <reference type="issue-tracker">
+                    <url>https://github.com/spring-projects/spring-framework/issues</url>
+                </reference>
+                <reference type="vcs">
+                    <url>https://github.com/spring-projects/spring-framework</url>
+                </reference>
+            </externalReferences>
+        </component>
+        <component bom-ref="pkg:maven/io.micrometer/micrometer-observation@1.11.4?type=jar" type="library">
+            <group>io.micrometer</group>
+            <name>micrometer-observation</name>
+            <version>1.11.4</version>
+            <description><![CDATA[Module containing Observation related code]]></description>
+            <scope>required</scope>
+            <hashes>
+                <hash alg="MD5">6b7561243a105b99d82be3de7bdb0856</hash>
+                <hash alg="SHA-1">1aa2f6ba1dae42c403543bd14ea5f302d7ed6d85</hash>
+                <hash alg="SHA-256">b456792a32590ab442de8183b29d967523c46f34cc15daf5cd020db8b342722b</hash>
+                <hash alg="SHA-384">b4092f142159713c64f8b7085e9713f5b550afd5a9b83c10679480e47366fe993f59c68b0cbdabefa1608e54b75cefee</hash>
+                <hash alg="SHA-512">de0e4b2d02928bbde12c19ddf5d51590fede5fddeb2244e38a167f8fc005b4c9213881128db8d7485773431cba73b8130dfa52a68cfc54a7c1ac59f64ecb603d</hash>
+                <hash alg="SHA3-256">9fc0819aff689a46720078bc77145b924c218e87053fab7c8f9534308e614e03</hash>
+                <hash alg="SHA3-384">8f04df409d05264492b92e2d6fb69fafbefcdfa95bd70ed45b3f49c18a06a69f1a6b24d12a2947668062a08f42ceac02</hash>
+                <hash alg="SHA3-512">ca03b5de1bf3941e259ce7f557264e3903dd9a3ecb4e26aa60fed17d46b15b7c0f5a66d2e458bb0edf601c8b6f00002513dc691791c3e73d5d6f6cfcc6aa9788</hash>
+            </hashes>
+            <licenses>
+                <license>
+                    <id>Apache-2.0</id>
+                </license>
+            </licenses>
+            <purl>pkg:maven/io.micrometer/micrometer-observation@1.11.4?type=jar</purl>
+        </component>
+        <component bom-ref="pkg:maven/io.micrometer/micrometer-commons@1.11.4?type=jar" type="library">
+            <group>io.micrometer</group>
+            <name>micrometer-commons</name>
+            <version>1.11.4</version>
+            <description><![CDATA[Module containing common code]]></description>
+            <scope>required</scope>
+            <hashes>
+                <hash alg="MD5">2ae5ddb3423a04264a0e0adbd616ae8e</hash>
+                <hash alg="SHA-1">6dfbbc07ecad294bffacff0648d6eaa4de78f332</hash>
+                <hash alg="SHA-256">93c4da01a63f264197ff91cd7bb81cbc43896a5eb0d2a693eb60e0f6756ed08d</hash>
+                <hash alg="SHA-384">9fd07d250278806d06c3ea45531e08557f4fa17e8e7282e7b22b29ed00a75c710eac8c85e2b126af94757ce62a7a986e</hash>
+                <hash alg="SHA-512">fd8b563c205174ea8ff30ebe7e2af79d92c6fd8f230578332e1335d74d36c0ad627f4b5edfa81014625ecd2afb29dd28df4d3eefa7610b42a5c7c7d5a83358b4</hash>
+                <hash alg="SHA3-256">b9d8050ab180c0d385917fe29a78fbf7bc47f61f0e59387ed3f082c86a59478a</hash>
+                <hash alg="SHA3-384">65450bfd99e136999716719a58c1064449190d284021e1ae63c90d5e7fc340841f933c0eaed807bbc8c1dbc690bbbafa</hash>
+                <hash alg="SHA3-512">a156bf2b4729015af868f9123437b83baf079aaa71e923cefa75c313e9d052b646df1eb2caacd396408d98e41bced403d293d7f7506ff7939e5672158fb9fb79</hash>
+            </hashes>
+            <licenses>
+                <license>
+                    <id>Apache-2.0</id>
+                </license>
+            </licenses>
+            <purl>pkg:maven/io.micrometer/micrometer-commons@1.11.4?type=jar</purl>
+        </component>
+        <component bom-ref="pkg:maven/org.yaml/snakeyaml@2.0?type=jar" type="library">
+            <group>org.yaml</group>
+            <name>snakeyaml</name>
+            <version>2.0</version>
+            <description><![CDATA[YAML 1.1 parser and emitter for Java]]></description>
+            <scope>required</scope>
+            <hashes>
+                <hash alg="MD5">caf24b81b9d57e6d4f68b1ccd36e00a3</hash>
+                <hash alg="SHA-1">3aab2116756442bf0d4cd1c089b24d34c3baa253</hash>
+                <hash alg="SHA-256">880c9d896e4b74a06c549c15ca496450165d6909fa15d7e662bee8f6a66d7afa</hash>
+                <hash alg="SHA-384">63c0ec40f4e3f24786031fb8a9477071c86e69247dce283ff725e328e26fba7bdfbb0ab52027b9b0988b3978703a95fe</hash>
+                <hash alg="SHA-512">93567558444365c436027bd1064b67ae99abde77fa89b33ac7c586ab83e4dbf02b7610669fd00ccd258bca6ba3fa078954c92d918b989317dce7bf9ce18836b8</hash>
+                <hash alg="SHA3-256">66264c5c5f4703942a959310c14f22df9c2b1c304ddca1d1c211da58af5623f4</hash>
+                <hash alg="SHA3-384">fedd091de2b63c38fb04cb8e2d657bc7b37193ef065b18058be892d6b816d7cb68e5445819c3f3f8fca116311adc9760</hash>
+                <hash alg="SHA3-512">0c4c5807880025a22791114253443d2166218760d63b80cd72eb3fdd71a19fdadb27d392b47de9c6b7ca2a2dc312273f0b8c97012ff277d2cab0fd06f3902573</hash>
+            </hashes>
+            <licenses>
+                <license>
+                    <id>Apache-2.0</id>
+                </license>
+            </licenses>
+            <purl>pkg:maven/org.yaml/snakeyaml@2.0?type=jar</purl>
+            <externalReferences>
+                <reference type="issue-tracker">
+                    <url>https://bitbucket.org/snakeyaml/snakeyaml/issues</url>
+                </reference>
+                <reference type="vcs">
+                    <url>https://bitbucket.org/snakeyaml/snakeyaml/src</url>
                 </reference>
             </externalReferences>
         </component>
@@ -2867,19 +2983,8 @@
             <dependency ref="pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.1.4?type=jar"/>
             <dependency ref="pkg:maven/jakarta.annotation/jakarta.annotation-api@2.1.1?type=jar"/>
             <dependency ref="pkg:maven/org.springframework/spring-core@6.0.12?type=jar"/>
-            <dependency ref="pkg:maven/org.yaml/snakeyaml@1.33?type=jar"/>
         </dependency>
-        <dependency ref="pkg:maven/org.springframework.boot/spring-boot@3.1.4?type=jar">
-            <dependency ref="pkg:maven/org.springframework/spring-context@6.0.12?type=jar"/>
-        </dependency>
-        <dependency ref="pkg:maven/org.springframework/spring-context@6.0.12?type=jar">
-            <dependency ref="pkg:maven/org.springframework/spring-aop@6.0.12?type=jar"/>
-            <dependency ref="pkg:maven/org.springframework/spring-beans@6.0.12?type=jar"/>
-            <dependency ref="pkg:maven/org.springframework/spring-expression@6.0.12?type=jar"/>
-        </dependency>
-        <dependency ref="pkg:maven/org.springframework/spring-aop@6.0.12?type=jar"/>
-        <dependency ref="pkg:maven/org.springframework/spring-beans@6.0.12?type=jar"/>
-        <dependency ref="pkg:maven/org.springframework/spring-expression@6.0.12?type=jar"/>
+        <dependency ref="pkg:maven/org.springframework.boot/spring-boot@3.1.4?type=jar"/>
         <dependency ref="pkg:maven/org.springframework.boot/spring-boot-autoconfigure@3.1.4?type=jar"/>
         <dependency ref="pkg:maven/org.springframework.boot/spring-boot-starter-logging@3.1.4?type=jar">
             <dependency ref="pkg:maven/ch.qos.logback/logback-classic@1.4.11?type=jar"/>
@@ -2900,7 +3005,25 @@
             <dependency ref="pkg:maven/org.springframework/spring-jcl@6.0.12?type=jar"/>
         </dependency>
         <dependency ref="pkg:maven/org.springframework/spring-jcl@6.0.12?type=jar"/>
-        <dependency ref="pkg:maven/org.yaml/snakeyaml@1.33?type=jar"/>
+        <dependency ref="pkg:maven/org.springframework/spring-webmvc@5.2.20.RELEASE?type=jar">
+            <dependency ref="pkg:maven/org.springframework/spring-aop@6.0.12?type=jar"/>
+            <dependency ref="pkg:maven/org.springframework/spring-beans@6.0.12?type=jar"/>
+            <dependency ref="pkg:maven/org.springframework/spring-context@6.0.12?type=jar"/>
+            <dependency ref="pkg:maven/org.springframework/spring-expression@6.0.12?type=jar"/>
+            <dependency ref="pkg:maven/org.springframework/spring-web@6.0.12?type=jar"/>
+        </dependency>
+        <dependency ref="pkg:maven/org.springframework/spring-aop@6.0.12?type=jar"/>
+        <dependency ref="pkg:maven/org.springframework/spring-beans@6.0.12?type=jar"/>
+        <dependency ref="pkg:maven/org.springframework/spring-context@6.0.12?type=jar"/>
+        <dependency ref="pkg:maven/org.springframework/spring-expression@6.0.12?type=jar"/>
+        <dependency ref="pkg:maven/org.springframework/spring-web@6.0.12?type=jar">
+            <dependency ref="pkg:maven/io.micrometer/micrometer-observation@1.11.4?type=jar"/>
+        </dependency>
+        <dependency ref="pkg:maven/io.micrometer/micrometer-observation@1.11.4?type=jar">
+            <dependency ref="pkg:maven/io.micrometer/micrometer-commons@1.11.4?type=jar"/>
+        </dependency>
+        <dependency ref="pkg:maven/io.micrometer/micrometer-commons@1.11.4?type=jar"/>
+        <dependency ref="pkg:maven/org.yaml/snakeyaml@2.0?type=jar"/>
         <dependency ref="pkg:maven/org.cyclonedx/cyclonedx-maven-plugin@2.2.0?type=jar">
             <dependency ref="pkg:maven/org.cyclonedx/cyclonedx-core-java@3.0.7?type=jar"/>
             <dependency ref="pkg:maven/org.apache.commons/commons-lang3@3.12.0?type=jar"/>

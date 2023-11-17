@@ -1,4 +1,4 @@
-FROM adoptopenjdk:11-jre-hotspot
+FROM ubuntu:lunar-20231004
 VOLUME /tmp
 ARG JAR_FILE
 COPY ${JAR_FILE} app.jar

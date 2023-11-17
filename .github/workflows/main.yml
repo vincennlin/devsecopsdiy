@@ -43,7 +43,7 @@ jobs:
         java-version: '17'
         cache: 'maven'
     - name: Build with Maven cloud
-      run: mvn -B verify sonar:sonar -Dsonar.projectKey=devsecopsdiy -Dsonar.organization=vincennlin
+      run: mvn -B verify sonar:sonar -Dsonar.projectKey=vincennlin_devsecopsdiy -Dsonar.organization=vincennlin
         -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
     env:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

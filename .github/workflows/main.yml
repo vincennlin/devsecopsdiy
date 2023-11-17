@@ -48,11 +48,25 @@ jobs:
   #   env:
   #     SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
-  sbom:
+  # sbom:
+  #   runs-on: ubuntu-latest
+  #   name: Generate SBOM
+  #   # needs: [sast] 
+  #   needs: [depchecktest]
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: actions/setup-java@v3
+  #       with:
+  #         distribution: 'temurin'
+  #         java-version: '17'
+  #         cache: 'maven'
+  #     - name: Generate SBOM
+  #       run: mvn cyclonedx:makeAggregateBom
+
+  slscan:
     runs-on: ubuntu-latest
-    name: Generate SBOM
-    # needs: [sast] 
-    needs: [depchecktest]
+    needs: depchecktest
+    name: Perform SL Scan
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v3
@@ -60,5 +74,11 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
           cache: 'maven'
-      - name: Generate SBOM
-        run: mvn cyclonedx:makeAggregateBom
+      - uses: ShiftLeftSecurity/scan-action@master
+        with:
+          type: "credscan,java,depscan"
+      - uses: actions/upload-artifact@master
+        with:
+          name: SLSCAN reports
+          path: ${{github.workspace}}/reports
+          

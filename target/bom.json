@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.2",
-  "serialNumber": "urn:uuid:2e3abb2c-f063-41c5-97ce-050e2de3c298",
+  "serialNumber": "urn:uuid:1792a321-f57c-4181-b983-65073d120f7d",
   "version": 1,
   "metadata": {
-    "timestamp": "2023-11-17T22:06:02Z",
+    "timestamp": "2023-11-17T22:34:36Z",
     "tools": [{
       "vendor": "CycloneDX",
       "name": "CycloneDX Maven plugin",

@@ -13,8 +13,8 @@ jobs:
           cache: 'maven'
       - name: Build project with Maven
         run: mvn clean install
-      - name: Copy JAR to target directory
-        run: cp target/*.jar ${{github.workspace}}/target/
+      # - name: Copy JAR to target directory
+      #   run: cp target/*.jar ${{github.workspace}}/target/
       - name: Depcheck
         uses: dependency-check/Dependency-Check_Action@main
         env:
